@@ -54,7 +54,7 @@ html {
   .img-rounded {border-radius:1rem;}
  
 
-body {background-image:url(/images/background_1920.webp); background-size:cover; background-repeat:no-repeat; background-attachment:fixed; background-position:center top; position:relative;}
+body {background-image:url(../images/background_1920.webp); background-size:cover; background-repeat:no-repeat; background-attachment:fixed; background-position:center top; position:relative;}
 body::before {content:''; width:100vw; height:100vh; background:var(--black); opacity:1; position:fixed; top:0; left:0; transition:opacity 2s ease-out;}
 body.animate.fade-background::before {opacity:0.85;}
 
@@ -79,7 +79,7 @@ main {position:relative; padding-top:6rem; padding-bottom:4rem;}
 .level-3-title {font-size:1.2rem; font-weight:var(--fw-semibold);}
 
 .btn {background: linear-gradient(120deg, rgba(193,59,198,1) 0%, rgba(92,3,215,1) 100%);color:var(--white); display:inline-block; font-size:15px; padding:1rem 2rem; border-radius:0.5rem; position:relative; cursor:pointer; border:none; background-size:200% 200%; transition:background-position 1s ease;}
-.btn::after {content:''; position:relative; width:15px; height:20px; margin-left:0.5rem; background:url(/images/arrow.svg) no-repeat; display:inline-block; vertical-align:middle;}
+.btn::after {content:''; position:relative; width:15px; height:20px; margin-left:0.5rem; background:url(../images/arrow.svg) no-repeat; display:inline-block; vertical-align:middle;}
 .btn:hover {background-position:100% 100%; color:var(--white);}
 
 ul.list {list-style:none; font-weight:var(--fw-semibold); font-size:1.1rem;}
