@@ -59,6 +59,7 @@ body::before {content:''; width:100vw; height:100vh; background:var(--black); op
 body.animate.fade-background::before {opacity:0.85;}
 
 main {position:relative; padding-top:6rem; padding-bottom:4rem;}
+main::before {content:""; position:absolute; right:0; top:-9rem; width:300px; height:300px; background: url(../images/ring.webp) no-repeat; background-size: contain; z-index: 2;}
 
 /* Animation */
 .fade-in {opacity:0; transition-delay:0.5s !important; transition:opacity 1.5s ease-out;}
@@ -99,6 +100,8 @@ ul.list li span {display:flex; font-size:1.4rem; flex:0 0 48px; width:48px; heig
 }
 
 @media (min-width:768px) {
+    main::before {width:400px; height:400px; top:-12rem}
+
     .level-1-title {font-size:4rem;;}
     .level-2-title {font-size:2rem;}
     .level-3-title {font-size:1.6rem;}
