@@ -58,7 +58,7 @@ body {background-image:url(../images/background_1920.webp); background-size:cove
 body::before {content:''; width:100vw; height:100vh; background:var(--black); opacity:1; position:fixed; top:0; left:0; transition:opacity 2s ease-out;}
 body.animate.fade-background::before {opacity:0.85;}
 
-main {position:relative; padding-top:6rem; padding-bottom:4rem;}
+main {position:relative; padding-top:6rem; padding-bottom:2rem;}
 main::before {content:""; position:absolute; right:0; top:-9rem; width:300px; height:300px; background: url(../images/ring.webp) no-repeat; background-size: contain; z-index: 2; opacity:0; transition:opacity 2s ease-out; animation: rotate 10s linear infinite;}
 main.animate::before {opacity: 1;}
 
@@ -89,8 +89,8 @@ main.animate::before {opacity: 1;}
 .level-2-title {font-size:1.5rem; font-weight:var(--fw-regular);}
 .level-3-title {font-size:1.2rem; font-weight:var(--fw-semibold);}
 
-.btn {background: linear-gradient(120deg, rgba(193,59,198,1) 0%, rgba(92,3,215,1) 100%);color:var(--white); display:inline-block; font-size:15px; padding:1rem 2rem; border-radius:0.5rem; position:relative; cursor:pointer; border:none; background-size:200% 200%; transition:background-position 1s ease;}
-.btn::after {content:''; position:relative; width:15px; height:20px; margin-left:0.5rem; background:url(../images/arrow.svg) no-repeat; display:inline-block; vertical-align:middle;}
+.btn {background: linear-gradient(120deg, rgba(193,59,198,1) 0%, rgba(92,3,215,1) 100%); color:var(--white); display:inline-flex; font-size:15px; padding:1rem 2rem; border-radius:0.5rem; position:relative; cursor:pointer; border:none; background-size:200% 200%; transition:background-position 1s ease;}
+.btn::after {content:''; position:relative; width:15px; height:20px; margin-left:0.5rem; background:url(../images/arrow.svg) no-repeat; display:inline-flex; align-self: center;}
 .btn:hover {background-position:100% 100%; color:var(--white);}
 
 ul.list {list-style:none; font-weight:var(--fw-semibold); font-size:1.1rem;}
@@ -104,6 +104,11 @@ ul.list li span {display:flex; font-size:1.4rem; flex:0 0 48px; width:48px; heig
 .headline {grid-area:headline;}
 .text {grid-area:text;}
 .image {grid-area:image; padding-top:2rem;}
+
+/* Footer */
+footer {position: relative; padding-bottom:4rem;}
+footer ul {list-style:none; display: flex; font-size: 1.75rem; gap:0.6rem; flex-wrap: wrap;}
+footer ul li a {background:#fff; display: flex; align-items: center; justify-content: center; border-radius:50%; width:40px; height:40px;}
 
 @media (min-width:440px) {
     .level-1-title {font-size:2.8rem;;}
